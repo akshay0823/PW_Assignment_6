@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise -3</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .form_container {
+      width: 100vw;
+      height: 100vh;
+      background-color: antiquewhite;
+      display: flex;
+    }
+    form {
+      width: 50%;
+      height: 50%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      margin-bottom: 5px;
+      color: rgb(141, 192, 237);
+      text-shadow: 2px 1px black;
+    }
+    #Fname {
+      background-color: #f58080;
+    }
+    #Lname {
+      background-color: #e4e73b;
+    }
+    #email {
+      background-color: #23a9e7;
+    }
+    #pass {
+      background-color: #4bbf3e8a;
+    }
+    .submit_btn {
+      font-size: 16px;
+      padding: 3px 7px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #e4843f;
+      color: #ffffff;
+    }
+    .submit_btn:hover {
+      background-color: #ffffff;
+      color: #e4843f;
+      transition: all 1s;
+    }
+  </style>
+  <body>
+    <div class="form_container">
+      <form>
+        <h1>Form</h1>
+        <div>
+          <label for="Fname">First Name</label>
+          <input
+            type="text"
+            name="Fname"
+            id="Fname"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="Lname">Last Name</label>
+          <input
+            type="text"
+            name="Lname"
+            id="Lname"
+            placeholder="Enter your last name"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail address"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Enter your password"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male" checked />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">other</label>
+        </div>
+        <br />
+        <button class="submit_btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
